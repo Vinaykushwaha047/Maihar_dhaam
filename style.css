@@ -346,6 +346,7 @@ body.dark-theme .hero-overlay {
 .text-link:focus-visible,
 .menu-toggle:focus-visible,
 .gallery-item:focus-visible,
+.place-photo-button:focus-visible,
 .back-to-top:focus-visible,
 .lightbox-close:focus-visible {
   outline: 3px solid rgba(150, 96, 14, 0.45);
@@ -548,12 +549,56 @@ body.dark-theme .secondary {
   line-height: 1.75;
 }
 
+.place-photo-button {
+  margin-top: 12px;
+  padding: 6px 12px;
+  border: 1px solid var(--accent-light);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.place-photo-button:hover {
+  transform: translateY(-2px);
+  background: var(--accent);
+  color: var(--surface);
+}
+
 .info-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .info-box {
   padding: 26px;
+}
+
+.info-action {
+  margin-top: 16px;
+  padding: 9px 16px;
+  border: 1px solid var(--accent-light);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.info-action:hover {
+  transform: translateY(-2px);
+  background: var(--accent);
+  color: var(--surface);
+}
+
+.info-action:focus-visible {
+  outline: 3px solid rgba(150, 96, 14, 0.45);
+  outline-offset: 3px;
 }
 
 .info-box::before {

@@ -7,6 +7,7 @@ if ('IntersectionObserver' in window) {
         observer.unobserve(entry.target);
       }
     });
+
   }, { threshold: 0.15 });
 
   reveals.forEach(element => observer.observe(element));
@@ -75,4 +76,27 @@ setTheme(savedTheme);
 themeToggle?.addEventListener('click', () => {
   const nextTheme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
   setTheme(nextTheme, true);
+});
+
+const lightbox = document.querySelector('.lightbox');
+const lightboxImage = lightbox?.querySelector('img');
+const lightboxCaption = lightbox?.querySelector('.lightbox-caption');
+const lightboxClose = lightbox?.querySelector('.lightbox-close');
+
+document.querySelectorAll('.gallery-item, .place-photo-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const imagePath = button.getAttribute('data-full-image');
+    const imageAlt = button.getAttribute('data-image-alt');
+    if (!lightbox || !lightboxImage || !imagePath || !imageAlt) return;
+
+    lightboxImage.src = imagePath;
+    lightboxImage.alt = imageAlt;
+    if (lightboxCaption) lightboxCaption.textContent = imageAlt;
+    lightbox.showModal();
+  });
+});
+
+lightboxClose?.addEventListener('click', () => lightbox?.close());
+lightbox?.addEventListener('click', event => {
+  if (event.target === lightbox) lightbox.close();
 });
