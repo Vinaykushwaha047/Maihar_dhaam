@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Allura&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../language.css">
 </head>
 <body>
   <header class="navbar">
@@ -24,6 +25,14 @@
     </nav>
     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="navLinks" aria-expanded="false">☰</button>
   </header>
+
+  <div class="language-control" role="group">
+    <label id="language-label" for="site-language">Language</label>
+    <select id="site-language" aria-label="Choose language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+  </div>
 
   <main>
     <section class="hero">
@@ -102,5 +111,6 @@
     <p>© 2026 Vinay Kushwaha. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  <script src="../language.js"></script>
 </body>
 </html>

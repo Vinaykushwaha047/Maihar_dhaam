@@ -7,6 +7,7 @@
     <title>Darshan Rules | Maa Sharda Maihar</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../language.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -41,6 +42,14 @@
             <a href="../contact/contact.html">Contact</a>
         </nav>
     </header>
+
+    <div class="language-control" role="group">
+        <label id="language-label" for="site-language">Language</label>
+        <select id="site-language" aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </div>
 
     <main>
         <!-- Hero Section -->
@@ -227,6 +236,6 @@
         <p>© <span id="year"></span> Vinay Kushwaha. All Rights Reserved.</p>
         <p class="footer-blessing">🙏 Jai Maa Sharda 🙏</p>
     </footer>
-
+    <script src="../language.js"></script>
 </body>
 </html>

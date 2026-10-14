@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#7b1725">
   <title>Contact Us | Maa Sharda Maihar</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../language.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -32,6 +33,14 @@
       <a href="contact.html" class="active" aria-current="page">Contact</a>
     </nav>
   </header>
+
+  <div class="language-control" role="group">
+    <label id="language-label" for="site-language">Language</label>
+    <select id="site-language" aria-label="Choose language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+  </div>
 
   <main>
     <section class="hero">
@@ -167,5 +176,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="../language.js"></script>
 </body>
 </html>

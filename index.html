@@ -8,6 +8,7 @@
   <meta name="description" content="Discover Maa Sharda Temple, Maihar's sacred places, local attractions, and useful yatra information." />
   <title>Maa Sharda | Maihar</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="language.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -33,6 +34,14 @@
       <span></span><span></span><span></span>
     </button>
   </header>
+
+  <div class="language-control" role="group">
+    <label id="language-label" for="site-language">Language</label>
+    <select id="site-language" aria-label="Choose language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+  </div>
 
   <section id="home" class="hero">
     <div class="hero-overlay"></div>
@@ -183,6 +192,7 @@
 
   <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
+  <script src="language.js"></script>
 </body>
 
 </html>
