@@ -74,7 +74,6 @@ a {
   border-radius: 4px;
   background: var(--gold);
 }
-.theme-toggle,
 .menu-toggle {
   height: 45px;
   width: 49px;
@@ -365,45 +364,6 @@ a {
   color: #66625c;
   font-size: 12px;
 }
-body.dark-mode {
-  --bg: #1d1b18;
-  --ink: #f7f0e4;
-  --muted: #c5bbae;
-  background: #1d1b18;
-  color: var(--ink);
-}
-.dark-mode .navbar,
-.dark-mode .travel-card {
-  background: #29251f;
-}
-.dark-mode .nav-links a,
-.dark-mode .travel-main p,
-.dark-mode .card-meta p,
-.dark-mode .tip p,
-.dark-mode .tips-heading p,
-.dark-mode .footer p {
-  color: #d2c8bb;
-}
-.dark-mode .hero {
-  background: #1d1b18;
-}
-.dark-mode .hero-image {
-  opacity: 0.35;
-}
-.dark-mode .hero h1 {
-  color: #fff5e5;
-}
-.dark-mode .hero p {
-  color: #e0d5c5;
-}
-.dark-mode .tips {
-  background: #29251f;
-  border-color: #4c3b22;
-}
-.dark-mode .theme-toggle {
-  background: #29251f;
-  border-color: #4c3b22;
-}
 @media (max-width: 1200px) {
   .navbar,
   .travel-cards,
@@ -480,8 +440,9 @@ body.dark-mode {
     width: calc(100% - 40px);
   }
   .hero-image {
-    left: 25%;
-    opacity: 0.65;
+    left: 0;
+    opacity: 0.75;
+    background-position: 72% center;
   }
   .hero p {
     max-width: 530px;
@@ -534,10 +495,6 @@ body.dark-mode {
 @media (max-width: 480px) {
   .brand {
     font-size: 19px;
-  }
-  .theme-toggle {
-    width: 40px;
-    height: 40px;
   }
   .hero {
     height: 280px;
